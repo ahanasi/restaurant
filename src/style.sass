@@ -1,0 +1,99 @@
+*
+  box-sizing: border-box
+
+  @font-face
+    font-family: "Open-Sans"
+    src: url("./OpenSans-Bold.ttf") format("ttf")
+    src: url("./OpenSans-BoldItalic.ttf") format("ttf")
+    src: url("./OpenSans-ExtraBold.ttf") format("ttf"),
+    src: url("./OpenSans-ExtraBoldItalic.ttf") format("ttf")
+    src: url("./OpenSans-Italic.ttf") format("ttf")
+    src: url("./OpenSans-Light.ttf") format("ttf")
+    src: url("./OpenSans-LightItalic.ttf") format("ttf")
+    src: url("./OpenSans-Regular.ttf") format("ttf")
+    src: url("./OpenSans-SemiBold.ttf") format("ttf")
+    src: url("./OpenSans-SemiBoldItalic.ttf") format("ttf")
+    font-weight: 600
+    font-style: normal
+
+body
+  font-size: 1rem
+  line-height: 1.5
+
+p,
+li,
+h1,
+h2,
+h3,
+h4
+  // Help prevent overflow of long words/names/URLs
+  word-break: break-word
+  hyphens: auto
+  margin-top: 0
+
+.flex
+  display: flex
+
+.flex-col
+  display: flex
+  flex-direction: column
+
+.all-center
+  justify-content: space-evenly
+  align-items: center
+
+.content
+  height: 100vh
+  width: 100vw
+  -webkit-background-size: cover
+  -moz-background-size: cover
+  -o-background-size: cover
+  background-size: cover
+  background: url(./Background.jpg) no-repeat center center fixed
+
+.overlay
+  position: absolute
+  height: 100%
+  width: 100%
+  top: 0
+  left: 0
+  background: rgba(0, 0, 0, 0.65)
+  color: bisque
+
+  .headline
+    margin-left: 1rem
+    font-family: "Open-Sans"
+
+    h1
+      font-size: 5rem
+      font-weight: 700
+
+  section
+    margin-top: 3rem
+
+    h2
+      font-size: 3rem
+      margin-bottom: 2rem
+
+    a
+      color: bisque
+
+      .address
+        font-size: 1.2rem
+
+    .locWrapper
+      line-height: 1.5
+        
+
+    .tagline
+      color: bisque
+      font-weight: 600
+      font-size: 4rem
+
+    .blurb
+      font-weight: 300
+      margin-top: 1rem
+      font-size: 1.5rem
+
+    .text-center
+      text-align: center
