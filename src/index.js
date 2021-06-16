@@ -2,6 +2,7 @@ import "./style.sass";
 import "./reset.sass";
 import homePage from "./home";
 import hoursLoc from "./hours";
+import menu from "./menu"
 import { list } from "postcss";
 
 const bgHeader = () => {
@@ -13,6 +14,7 @@ const bgHeader = () => {
   const navItems = [
     ["home", homePage],
     ["hours & location", hoursLoc],
+    ["menu", menu]
   ];
   const h1 = document.createElement("h1");
 
