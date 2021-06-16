@@ -4,17 +4,23 @@ const homePage = () => {
   const mainContent = document.createElement("section");
 
   const tagline = document.createElement("p");
-  const blurb = document.createElement("p");
+  const descWrapper = document.createElement("div");
+  const desc = document.createElement("p");
 
   tagline.classList.add("tagline");
-  blurb.classList.add("blurb");
+  desc.classList.add("blurb");
+  descWrapper.classList.add("desc-wrapper","text-center");
+
   tagline.textContent = "a new eating experience";
-  blurb.textContent = "Where exceptional service meets eclectic flavors";
+  desc.textContent =
+    "To craft our menu, we traveled up and down India’s coast, from Kerala to Hyderabad and beyond. The foods from these regions boasted an arsenal of flavors like none other – curries that were simultaneously spicy yet cooling, fresh seafood prepared in homemade chutney, crisp dosas with hearty, warm sambar. We combined the best flavors and preparations from these regions and beyond and created a dining destination that honors Indian cuisine and tradition.";
 
   mainContent.classList.add("flex-col", "all-center");
 
+  descWrapper.append(desc);
+
   mainContent.append(tagline);
-  mainContent.append(blurb);
+  mainContent.append(descWrapper);
   overlay.append(mainContent);
   contentDiv.append(overlay);
 
