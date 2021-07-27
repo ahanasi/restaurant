@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/ahanasi/restaurant/issues"
   },
-  "homepage": "https://github.com/ahanasi/restaurant#readme",
+  "homepage": "https://github.com/ahanasi/restaurant",
   "devDependencies": {
     "css-loader": "^5.2.6",
     "html-webpack-plugin": "^5.3.1",
